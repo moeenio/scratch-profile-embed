@@ -40,16 +40,15 @@ req.onreadystatechange = function() {
       bio.textContent = parsedresp.profile.bio;
       
     }
-    // Otherwise, it shows "Not specified
+    // Otherwise, it shows "Not specified"
     else {
       bio.innerHTML = "<em>Not specified</em>";
     }
-    // Supposed to show the "What I'm working on"
+    // Shows the "What I'm working on" if it's not empty
     if(parsedresp.profile.status !== "") {
       statusPar.textContent = parsedresp.profile.status;
-      console.log(parsedresp.profile.status !== "", parsedresp.profile.status, status.textContent);
     }
-
+    // Otherwise, it shows "Not specified"
     else {
       statusPar.innerHTML = "<em>Not specified</em>";
     } 

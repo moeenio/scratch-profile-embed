@@ -102,3 +102,22 @@ body {
     display: block;
   }
 }
+.warning {
+  background-color: #ac1c1c;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+.warning a {
+  color: #ffffff;
+}
+.dismiss-warning {
+  text-align: right;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
