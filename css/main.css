@@ -1,0 +1,104 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@keyframes spin {
+  1% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+#bio,#status {
+  white-space: pre-line;
+  vertical-align: top;
+  max-width: 500px;
+}
+#avatar {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+}
+#avatar.loading {
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#identity {
+  box-shadow: 0px 1px rgba(0, 0, 0, 0.29);
+  display: table;
+  height: 90px;
+  width: 100%;
+  background-color: #4d97ff;
+  color: #FFFFFF;
+}
+#name-and-country {
+  display: table-cell;
+  margin-right: auto;
+  text-align: left;
+  vertical-align: middle;
+  width: 100%;
+}
+#username,#country {
+  margin: 5px;
+}
+#username {
+  font-weight: 700;
+}
+#bio-and-status {
+  display: block;
+  text-align: center;
+  margin: 5px;
+}
+#bio-container,#status-container {
+  display: inline-block;
+  height: auto;
+  vertical-align: top;
+}
+#view-profile {
+  position: relative;
+  display: inline-table;
+  white-space: nowrap;
+  float: right;
+  height: 100%;
+}
+#view-profile-link-container {
+  display: table-cell;
+  vertical-align: middle;
+  width: auto;
+  padding: 5px;
+}
+#view-profile-link {
+  transition: all 0.2s;
+  display: inline-block;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #4d97ff !important;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0px 1px rgba(0, 0, 0, 0.37);
+}
+#view-profile-link:hover {
+  background-color: #4d97ff;
+  color: #ffffff !important;
+  border: 1px solid #ffffff;
+}
+#view-profile-link:active {
+  transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  -moz-transform: translateY(3px);
+  -o-transform: translateY(3px);
+}
+@media only screen and (max-width: 800px) {
+  #bio-container,#status-container {
+    display: block;
+  }
+}

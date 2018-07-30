@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Use it | Scratch Profile Embed</title>
+    <link rel="stylesheet" href="css/presentation.css">
+    <link rel="icon" href="images/icon.ico">
+  </head>
+  <body>
+    <img src="images/logo.png" alt="Logo" id="logo">
+    <h3 id="usage-info-title">Scratch Profile Embed <span class="beta">BETA</span></h3>
+    <p id="usage-info-paragraph">Embed your Scratch profile on your website</p>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="presentation.html" class="btn">Presentation</a>
+        </li>
+        <li>
+          <a href="updates.html" class="btn">Updates</a>
+        </li>
+        <li>
+          <a href="getcode.html" class="btn use-it active">Use it<i data-feather="arrow-right" class="btn-icon"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <form id="get-code-form">
+      <h3 id="get-the-code-title">Get embed code :</h3>
+      <div id="width-setting-container" class="left-input-container">
+        Width
+        <input type="number" id="width-input" placeholder="Width" onchange="updateEmbedCode()" value="340">
+      </div>
+      <div id="height-setting-container" class="left-input-container">
+        Height
+        <input type="number" id="height-input" placeholder="Height" onchange="updateEmbedCode()" value="500">
+        <p class="usage-note">NOTE : Remember that the width and height can be affected by CSS.</p>
+      </div>
+      <div id="username-input-container" class="left-input-container">
+        Username
+        <input type="text" id="username-input" onchange="updateEmbedCode()" placeholder="Username" value="griffpatch">
+      </div>
+    </form>
+    <div id="embed-code-container">
+      <h3 id="embed-code-heading">Your code</h3>
+      <div id="embed-code">
+      </div>
+    </div>
+    <h3 id="code-demo-heading">Preview</h3>
+    <div id="code-demo"></div>
+    <footer>
+      <img src="images/footer.png" alt="Made by Locness">
+    </footer>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/getcode.js"></script>
+  </body>
+</html>
