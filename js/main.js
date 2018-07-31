@@ -30,7 +30,7 @@ req.onreadystatechange = function() {
 
   if (req.readyState === 4 && req.status === 200) {
     // Shows the country and avatar
-    parsedresp = JSON.parse(req.responseText);
+    var parsedresp = JSON.parse(req.responseText);
     country.textContent = parsedresp.profile.country;
     avatar.alt = username + "'s avatar";
     avatar.src = "https://cdn2.scratch.mit.edu/get_image/user/" + parsedresp.id + "_90x90.png";
