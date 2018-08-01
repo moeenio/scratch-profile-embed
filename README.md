@@ -8,3 +8,4 @@ Use the chatbox on the site.
 Create an issue.
 # Credits
 Made by Locness using the Scratch API.
+https://en.scratch-wiki.info/wiki/Scratch_API_(2.0)
