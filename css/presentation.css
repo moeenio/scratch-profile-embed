@@ -22,13 +22,14 @@ body {
 }
 #code-demo {
   display: inline-block !important;
+  vertical-align: middle;
 }
 #get-code-form {
-  width: 300px;
+  width: 100%;
   display: inline-block !important;
 }
 #embed-code-container {
-  max-width: 800px;
+  max-width: 500px;
   display: inline-block !important;
 }
 #embed-code {
