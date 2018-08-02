@@ -31,6 +31,7 @@ body {
 #embed-code-container {
   max-width: 500px;
   display: inline-block !important;
+  margin: 15px;
 }
 #embed-code {
   text-align: left;
@@ -98,4 +99,9 @@ footer img {
   width: 100px;
   height: auto;
   margin: 10px;
+}
+@media only screen and (max-width: 546px) {
+  #embed-code {
+    font-size: calc(5px + 2vw);
+  }
 }
