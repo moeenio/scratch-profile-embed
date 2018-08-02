@@ -22,7 +22,6 @@ body {
 }
 #code-demo-container {
   display: inline-block !important;
-  margin: 0 auto;
   vertical-align: middle;
 }
 #get-code-form {
