@@ -18,6 +18,8 @@ body {
   white-space: pre-line;
   vertical-align: top;
   max-width: 500px;
+  margin: 0 auto;
+
 }
 #avatar {
   display: inline-block;
