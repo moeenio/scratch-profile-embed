@@ -10,15 +10,22 @@ body {
   padding: 0;
   font-size: 20px;
 }
+#logo {
+  margin: 20px;
+}
 .beta {
   display: inline-block;
   padding: 5px;
   border-radius: 4px;
   background-color: #b42a2a;
 }
-.usage-note {
-  font-weight: bold;
-  font-size: 15px;
+.presentation-paragraph {
+  max-width: 800px;
+  margin: 15px auto;
+}
+#example {
+  width: 90vw;
+  max-width: 800px;
 }
 #code-demo-container {
   display: inline-block !important;
@@ -27,6 +34,10 @@ body {
 #get-code-form {
   width: 100%;
   display: inline-block !important;
+}
+.usage-note {
+  font-weight: bold;
+  font-size: 15px;
 }
 #embed-code-container {
   max-width: 500px;
@@ -40,9 +51,6 @@ body {
   font-family: "Source Code Pro", monospace;
   background-color: #f4f4f4;
   color: #000000;
-}
-#logo {
-  margin: 20px;
 }
 .btn {
   transition: all 0.2s;
@@ -87,14 +95,7 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
-.presentation-paragraph {
-  max-width: 800px;
-  margin: 15px auto;
-}
-#example {
-  width: 90vw;
-  max-width: 800px;
-}
+
 footer img {
   width: 100px;
   height: auto;
