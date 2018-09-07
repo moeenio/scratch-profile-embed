@@ -95,6 +95,19 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
+.input {
+  transition-duration: 0.2s;
+  border: 1px solid #666666;
+  border-radius: 25px;
+  padding: 5px;
+}
+.input:hover, .input:focus {
+  border-color: #22477d;
+}
+.input:focus {
+  outline: none !important;
+  box-shadow: 0px 0px 0px 3px #3a87e0;
+}
 footer img {
   width: 100px;
   height: auto;
