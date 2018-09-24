@@ -29,6 +29,7 @@ body {
 }
 #avatar.loading {
   animation-name: spin;
+  animation-timing-function: linear;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
@@ -103,18 +104,4 @@ body {
   #bio-container,#status-container {
     display: block;
   }
-}
-.warning {
-  background-color: #ac1c1c;
-  color: #ffffff;
-  width: 100%;
-  text-align: center;
-}
-.warning a {
-  color: #ffffff;
-}
-.bottom {
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
