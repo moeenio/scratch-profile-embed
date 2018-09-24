@@ -7,6 +7,14 @@ var bio = document.getElementById("bio");
 var statusPar = document.getElementById("status-paragraph");
 var viewProfile = document.getElementById("view-profile-link");
 var username = location.hash.substr(1, location.hash.length);
+
+var error = function(title, desc) {
+  document.getElementById("error-title").textContent = title;
+  document.getElementById("error-info").textContent = desc;
+  document.getElementById("main").style.display = "none";
+  document.getElementById("error").style.display = "block";
+
+}
 // Shows the presentation page if there's no hash
 if (location.hash === "#" || location.hash === "") {
   location.href = "presentation.html";
@@ -27,6 +35,10 @@ var req = new XMLHttpRequest();
 req.open("GET", 'https://api.scratch.mit.edu/users/' + username);
 req.send();
 req.onreadystatechange = function() {
+
+  if (req.status == 404) {
+    error("User not found", "Make sure there isn't a typo.");
+  }
 
   if (req.readyState === 4 && req.status === 200) {
     // Shows the country and avatar
