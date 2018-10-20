@@ -13,8 +13,13 @@ var error = function(title, desc) {
   document.getElementById("error-info").textContent = desc;
   document.getElementById("main").style.display = "none";
   document.getElementById("error").style.display = "block";
-
+  endLoading();
 }
+
+var endLoading = function() {
+  document.getElementById("loading").className = "finished";
+}
+
 // Shows the presentation page if there's no hash
 if (location.hash === "#" || location.hash === "") {
   location.href = "presentation.html";
@@ -64,6 +69,7 @@ req.onreadystatechange = function() {
     else {
       statusPar.innerHTML = "<em>Not specified</em>";
     } 
-
+    // Hides the loader
+    endLoading();
   }};
   
