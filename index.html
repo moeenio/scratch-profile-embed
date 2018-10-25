@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/loaders.min.css">
   </head>
   <body>
+      <div id="no-js" class="error">
+        <div class="error-content">
+          <h1 id="error-title" class="error-title">No JavaScript</h1>
+          <p id="error-info" class="error-info">To view this embedded Scratch profile, JavaScript must be turned on. <br>
+          <a href="#" class="btn">Why?</a><br><a href="presentation.html" class="btn">About Scratch Profile Embed</a>
+        </p>
+        </div>
+      </div>
 	  <div id="loading">
       <div class="loader-container">
         <div class="loader">
@@ -19,7 +27,12 @@
         </div>
       </div>
     </div>
-    <div id="error"><div class="error-content"><h1 id="error-title"></h1><p id="error-info"></p></div></div>
+    <div id="error" class="error hide">
+      <div class="error-content">
+        <h1 id="error-title"></h1>
+        <p id="error-info"></p>
+      </div>
+    </div>
     <div id="main">
       <div id="identity">
         <img id="avatar" src="images/loader.svg" alt="Loading" class="loading">
@@ -28,7 +41,7 @@
           <p id="country">Loading</p>
         </div>
         <div id="view-profile">
-          <div id="view-profile-link-container"><a id="view-profile-link" href="#" target="_blank">View on Scratch</a></div>
+          <div id="view-profile-link-container"><a id="view-profile-link" class="btn" href="#" target="_blank">View on Scratch</a></div>
         </div>
       </div>
       <div id="bio-and-status">
@@ -43,5 +56,8 @@
       </div>
     </div>
     <script src="js/main.js"></script>
+    <script>
+      document.getElementById("no-js").style.display = "none";
+    </script>
   </body>
 </html>

@@ -94,7 +94,7 @@ body {
   width: auto;
   padding: 5px;
 }
-#view-profile-link {
+.btn {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
@@ -109,12 +109,12 @@ body {
   -webkit-box-shadow: 0px 1px rgba(0, 0, 0, 0.37);
           box-shadow: 0px 1px rgba(0, 0, 0, 0.37);
 }
-#view-profile-link:hover {
+.btn:hover {
   background-color: #4d97ff;
   color: #ffffff !important;
   border: 1px solid #ffffff;
 }
-#view-profile-link:active {
+.btn:active {
   transform: translateY(3px);
   -webkit-transform: translateY(3px);
   -ms-transform: translateY(3px);
@@ -126,7 +126,7 @@ body {
     display: block;
   }
 }
-#error {
+.error {
   position: fixed;
   left: 0;
   top: 0;
@@ -134,7 +134,6 @@ body {
   height: 100%;
   background-color: #4d97ff;
   color: #ffffff;
-  display: none;
   z-index: 150;
 }
 .error-content {
@@ -172,6 +171,6 @@ body {
   height: 100%;
 }
 
-#loading.finished {
+#loading.finished, .hide {
   display: none;
 }
