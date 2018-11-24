@@ -96,7 +96,6 @@ body {
 }
 .btn {
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
   display: inline-block;
   padding: 5px;
@@ -173,4 +172,17 @@ body {
 
 #loading.finished, .hide {
   display: none;
+}
+.top-banner {
+  background-color: mediumvioletred;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  color: white;
+}
+.top-banner a {
+  color: white;
 }
