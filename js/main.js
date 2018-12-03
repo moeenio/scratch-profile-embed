@@ -37,7 +37,7 @@ viewProfile.href = "https://scratch.mit.edu/users/" + username;
 
 // Do the request 
 var req = new XMLHttpRequest();
-req.open("GET", 'https://api.scratch.mit.edu/users/' + username);
+req.open("GET", 'https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/users/' + username);
 req.send();
 req.onreadystatechange = function() {
 
