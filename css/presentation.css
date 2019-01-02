@@ -137,6 +137,9 @@ cite::before {
   -webkit-box-shadow: 0px 0px 0px 3px #3a87e0;
   box-shadow: 0px 0px 0px 3px #3a87e0;
 }
+footer {
+  margin-top: 20px;
+}
 footer img {
   width: 100px;
   height: auto;
