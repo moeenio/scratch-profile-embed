@@ -12,6 +12,16 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+body a {
+  color: white;
+}
+cite::before {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url("https://png.icons8.com/ios-glyphs/50/000000/quote-left/FFFFFF");
+}
 .top-banner {
   background-color: mediumvioletred;
   width: 100%;
