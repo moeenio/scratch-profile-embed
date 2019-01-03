@@ -21,6 +21,9 @@ cite::before {
   height: 50px;
   width: 50px;
   background-image: url("https://png.icons8.com/ios-glyphs/50/000000/quote-left/FFFFFF");
+  position: relative;
+  left: 25px;
+  opacity: 0.3;
 }
 .top-banner {
   background-color: mediumvioletred;
