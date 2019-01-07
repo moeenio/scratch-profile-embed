@@ -46,7 +46,7 @@
     </div>
     <div id="embed-code-container">
       <h3 id="embed-code-heading">Your code</h3>
-      <div id="embed-code">
+      <div id="embed-code" onmouseup="showRating()">
       </div>
     </div>
     
@@ -61,5 +61,19 @@
     </script>
     <script src="js/getcode.js"></script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="00d0b1f0-0f6a-4dc2-ae37-91f2febc6e1d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <!-- Start emojicom.io widget -->
+
+    <script>
+      var showRating = function() {
+        if (window.focusNode !== null && document.querySelector(".emojicom-widget") !== []) {
+        console.log("fromage");
+        window.EMOJICOM_WIDGET = { campaign: "oBdOLuhbPYRfIXA3dQbD" };
+          emojicomScriptLink = document.createElement("script");
+          emojicomScriptLink.src = "https://cdn.emojicom.io/embed/widget.js";
+          document.body.appendChild(emojicomScriptLink);
+      }
+      }
+    </script>
+    <!-- End emojicom.io widget -->
   </body>
 </html>
