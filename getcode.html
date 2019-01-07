@@ -65,8 +65,7 @@
 
     <script>
       var showRating = function() {
-        if (window.focusNode !== null && document.querySelector(".emojicom-widget") !== []) {
-        console.log("fromage");
+        if (window.focusNode !== null && document.querySelectorAll(".emojicom-widget") !== []) {
         window.EMOJICOM_WIDGET = { campaign: "oBdOLuhbPYRfIXA3dQbD" };
           emojicomScriptLink = document.createElement("script");
           emojicomScriptLink.src = "https://cdn.emojicom.io/embed/widget.js";
