@@ -77,7 +77,7 @@ body {
 }
 @font-face {
   font-family: "Dosis Bold";
-  src: url("scratch-profile-embed/fonts/Dosis-Bold.ttf");
+  src: url("/scratch-profile-embed/fonts/Dosis-Bold.ttf");
 }
 #bio-and-status {
   display: block;
