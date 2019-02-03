@@ -27,7 +27,7 @@ body {
   padding: 0;
   background-color: white;
 }
-#bio,#status,#status-container {
+#bio,#status {
   white-space: pre-line;
   vertical-align: top;
   max-width: 500px;
