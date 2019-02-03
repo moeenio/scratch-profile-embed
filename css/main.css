@@ -27,12 +27,14 @@ body {
   padding: 0;
   background-color: white;
 }
-#bio,#status {
+#bio,#status,#status-container {
   white-space: pre-line;
   vertical-align: top;
   max-width: 500px;
   background-color: #ccffff;
   margin: 0 auto;
+  padding: 16px;
+  border-radius: 15px;
 
 }
 #avatar {
