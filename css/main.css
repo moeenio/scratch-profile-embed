@@ -75,22 +75,6 @@ body {
 #username {
   font-weight: 700;
 }
-@font-face {
-  font-family: "Dosis Bold";
-  src: url("/scratch-profile-embed/fonts/Dosis-Bold.ttf");
-}
-@font-face {
-  font-family: "Dosis Medium";
-  src: url("/scratch-profile-embed/fonts/Dosis-Medium.ttf");
-}
-@font-face {
-  font-family: "Dosis SemiBold";
-  src: url("/scratch-profile-embed/fonts/Dosis-SemiBold.ttf");
-}
-@font-face {
-  font-family: "Dosis";
-  src: url("/scratch-profile-embed/fonts/Dosis-Regular.ttf");
-}
 #bio-and-status {
   display: block;
   text-align: center;
