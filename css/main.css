@@ -73,8 +73,7 @@ body {
   margin: 5px;
 }
 #username {
-  font-family: "Dosis";
-  font-size: 18pt;
+  font-family: "Dosis Medium";
 }
 @font-face {
   font-family: "Dosis Bold";
