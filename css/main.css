@@ -73,7 +73,11 @@ body {
   margin: 5px;
 }
 #username {
-  font-weight: 700;
+  font-family: "Dosis Bold";
+}
+@font-face {
+  font-family: "Dosis Bold";
+  src: url("/fonts/Dosis-Bold.ttf");
 }
 #bio-and-status {
   display: block;
