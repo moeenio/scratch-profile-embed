@@ -74,6 +74,7 @@ body {
 }
 #username {
   font-family: "Dosis SemiBold";
+  font-size: 20pt;
 }
 @font-face {
   font-family: "Dosis Bold";
