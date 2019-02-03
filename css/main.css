@@ -116,11 +116,7 @@ body {
     transform: scale(1.1, 1.1);
 }
 .btn:active {
-  transform: translateY(3px);
-  -webkit-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  -moz-transform: translateY(3px);
-  -o-transform: translateY(3px);
+
 }
 @media only screen and (max-width: 800px) {
   #bio-container,#status-container {
