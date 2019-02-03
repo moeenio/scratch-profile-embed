@@ -81,6 +81,10 @@ body {
   src: url("/scratch-profile-embed/fonts/Dosis-Bold.ttf");
 }
 @font-face {
+  font-family: "Dosis Medium";
+  src: url("/scratch-profile-embed/fonts/Dosis-Medium.ttf");
+}
+@font-face {
   font-family: "Dosis SemiBold";
   src: url("/scratch-profile-embed/fonts/Dosis-SemiBold.ttf");
 }
