@@ -1,6 +1,6 @@
 // Shows the presentation page if there's no hash
 if (location.hash === "#" || location.hash === "") {
-  location.href = "/landing";
+  location.href = "landing";
 }
 
 // The variables
