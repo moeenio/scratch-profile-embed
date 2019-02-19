@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Embed your Scratch profile on your website. - Scratch Profile Embed</title>
+    <link rel="stylesheet" href="landing.css">
+  </head>
+  <body>
+    <main>
+      <div class="half left">
+        <div class="half-left-content">
+          <h1>Scratch Profile Embed <span class="version-badge">Beta</span></h1>
+          <p>Embed your Scratch profile on your website.<br> Easy and clean.</p>
+            <div class="get-started-form">
+                <input id="username-input" class="username-input" name="username" placeholder="Enter your username" type="text" size="20" maxlength="20" autocomplete="off">
+                <button class="submit" onCLick="startGetCode();">Get started</button>
+            </div>
+            <a class="block-link" href="changelog">View changelog</a>
+            <cite>This has really helped me promote my profile on my blog. It is quick and easy and the presentation is amazing! — <a href="https://scratch.mit.edu/users/Joshuay2" target="_blank" rel="noopener">Joshuay2</a></cite>
+            <div class="bottom">
+              <a class="block-link" href="https://github.com/locness3/scratch-profile-embed" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg> Open source under MIT license</a>
+            </div>
+        </div>
+      </div>
+      <div class="half right">
+        <div id="initial-content" class="half-right-content">
+          <h2 id="initial-right-heading">Get something like this :</h2>
+          <div id="preview-frame" class="preview-frame-div initial">
+            <iframe width="390" height="500" src='https://locness3.github.io/scratch-profile-embed/#griffpatch'></iframe>
+          </div>
+          <div id="end-form" class="end-form">
+              <div class="size-group">
+                <div class="width-input-container size-group-input">
+                  <label for="width-input">Width</label>
+                  <input id="width-input" type="number" value="390">
+                </div>
+                <div class="height-input size-group-input">
+                  <label for="height-input">Height</label>
+                  <input id="height-input" class="height-input" type="number" value="500">
+                </div>
+              </div>
+              <button class="submit" onCLick="endGetCode();">Get embed code</button>
+          </div>
+        </div>
+        <div id="getcode" class="half-right-content">
+          <a href="#back" class="back-button" onClick="backToStart();">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+           <line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline>
+           </svg>
+         </a>
+          <h2>Your embed code</h2>
+          <p>Copy and paste this to your website, and enjoy the embed!</p>
+          <p>Need help ?
+          <a href="javascript:$crisp.push(['do', 'chat:show']);$crisp.push(['do', 'chat:open'])
+;">Contact us</a>. We're happy to help you!</p>
+          <div class="code-block">
+            <pre><code id="embed-code"></code></pre>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="00d0b1f0-0f6a-4dc2-ae37-91f2febc6e1d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();$crisp.push(["do", "chat:hide"]);</script>
+    <script src="landing.js"></script>
+  </body>
+</html>

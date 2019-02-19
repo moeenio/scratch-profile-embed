@@ -1,3 +1,8 @@
+// Shows the presentation page if there's no hash
+if (location.hash === "#" || location.hash === "") {
+  location.href = "/landing";
+}
+
 // The variables
 var oldHash = location.hash;
 var avatar = document.getElementById("avatar");
@@ -20,10 +25,6 @@ var endLoading = function() {
   document.getElementById("loading").className = "finished";
 }
 
-// Shows the presentation page if there's no hash
-if (location.hash === "#" || location.hash === "") {
-  location.href = "presentation.html";
-} 
 // Reload the page on hash change
 window.onhashchange = function() {
   if (location.hash !== oldHash) {

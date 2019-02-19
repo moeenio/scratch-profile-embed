@@ -15,16 +15,6 @@ body {
 body a {
   color: white;
 }
-cite::before {
-  content: "";
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  background-image: url("https://png.icons8.com/ios-glyphs/50/000000/quote-left/FFFFFF");
-  position: relative;
-  left: 25px;
-  opacity: 0.3;
-}
 .top-banner {
   background-color: mediumvioletred;
   width: 100%;
@@ -38,46 +28,35 @@ cite::before {
 .top-banner a {
   color: white;
 }
-#logo {
-  margin: 20px;
-}
 .beta {
   display: inline-block;
   padding: 5px;
   border-radius: 4px;
   background-color: #b42a2a;
 }
-.presentation-paragraph {
-  margin: 15px auto;
+.block-link {
+  display: block;
+  margin: 15px 0;
+  text-decoration: none;
 }
-#example {
-  width: 90vw;
-  max-width: 800px;
-}
-#code-demo-container {
-  display: inline-block !important;
+
+.block-link::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWFycm93LXJpZ2h0Ij48bGluZSB4MT0iNSIgeTE9IjEyIiB4Mj0iMTkiIHkyPSIxMiI+PC9saW5lPjxwb2x5bGluZSBwb2ludHM9IjEyIDUgMTkgMTIgMTIgMTkiPjwvcG9seWxpbmU+PC9zdmc+");
   vertical-align: middle;
+  margin-left: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0.5;
 }
-#get-code-form {
-  width: 100%;
-  display: inline-block !important;
-}
-.usage-note {
-  font-weight: bold;
-  font-size: 15px;
-}
-#embed-code-container {
-  max-width: 500px;
-  display: inline-block !important;
-  margin: 15px;
-}
-#embed-code {
-  text-align: left;
-  padding: 20px;
-  border-radius: 2px;
-  font-family: "Source Code Pro", monospace;
-  background-color: #f4f4f4;
-  color: #000000;
+
+.block-link:hover::after {
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+  opacity: 1;
 }
 .btn {
   -webkit-transition: all 0.2s;
@@ -106,39 +85,12 @@ cite::before {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.use-it .btn-icon {
-  text-align: right;
-}
-.btn-icon {
-  vertical-align: middle;
-}
-.nav-list {
-  list-style-type: none;
-}
-.nav-list li {
-  display: inline-block;
-}
 .updates-list li {
   list-style-type: none;
 }
 .bullet {
   font-weight: bold;
   font-size: 20px;
-}
-.input {
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  border: 1px solid #666666;
-  border-radius: 25px;
-  padding: 5px;
-}
-.input:hover, .input:focus {
-  border-color: #22477d;
-}
-.input:focus {
-  outline: none !important;
-  -webkit-box-shadow: 0px 0px 0px 3px #3a87e0;
-  box-shadow: 0px 0px 0px 3px #3a87e0;
 }
 footer {
   margin-top: 20px;
@@ -147,9 +99,6 @@ footer img {
   width: 100px;
   height: auto;
   margin: 10px;
-}
-footer a {
-	color: #ffffff !important;
 }
 @media only screen and (max-width: 546px) {
   #embed-code {
