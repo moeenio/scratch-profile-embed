@@ -161,9 +161,6 @@ main {
   -ms-flex-align: center;
   align-items: center;
   overflow-x: hidden;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .half-right-content {
@@ -299,5 +296,13 @@ main {
   }
   h1, h2 {
     font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-height: 718px) {
+  .half {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 }
