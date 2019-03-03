@@ -32,7 +32,7 @@ body {
   vertical-align: top;
   max-width: 500px;
   margin: 0 auto;
-  max-height: 50vh;
+  max-height: 40vh;
   overflow-y: auto;
 }
 #avatar {
