@@ -14,7 +14,7 @@ var startGetCode = function() {
   frameHeight = document.getElementById("height-input").value;
   initialEndForm.style.display = "block";
   previewFrame.className = "preview-frame";
-  embedCode = `<iframe src="https://locness3.github.io/scratch-profile-embed#${username}" width="${frameWidth}" height="${frameHeight}"></iframe>`;
+  embedCode = `<iframe src="https://locness3.github.io/scratch-profile-embed/#${username}" width="${frameWidth}" height="${frameHeight}"></iframe>`;
   window.scrollTo(0, document.body.scrollHeight);
   initialRightHeading.textContent = "Preview";
   previewFrame.innerHTML = embedCode;
@@ -23,7 +23,7 @@ var startGetCode = function() {
 var endGetCode = function() {
   frameWidth = document.getElementById("width-input").value;
   frameHeight = document.getElementById("height-input").value;
-  embedCode = `<iframe src="https://locness3.github.io/scratch-profile-embed#${username}" width="${frameWidth}" height="${frameHeight}"></iframe>`;
+  embedCode = `<iframe src="https://locness3.github.io/scratch-profile-embed/#${username}" width="${frameWidth}" height="${frameHeight}"></iframe>`;
   embedCodeEl.textContent = embedCode;
   initialRightContent.style.display = "none";
   getCodeEl.style.display = "block";
