@@ -98,6 +98,7 @@ main {
   float: left;
   height: inherit;
   height: 100%;
+  width: 100%;
   padding: 15px;
   background-color: transparent;
   border: none;
