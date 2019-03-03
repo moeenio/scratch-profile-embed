@@ -9,7 +9,7 @@ var avatar = document.getElementById("avatar");
 var usernameLabel = document.getElementById("username");
 var country = document.getElementById("country");
 var bio = document.getElementById("bio");
-var statusPar = document.getElementById("status-paragraph");
+var statusPar = document.getElementById("status");
 var viewProfile = document.getElementById("view-profile-link");
 var username = location.hash.substr(1, location.hash.length);
 
