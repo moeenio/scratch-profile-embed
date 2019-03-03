@@ -98,12 +98,14 @@ main {
   float: left;
   height: inherit;
   height: 100%;
+  width: 80%;
   padding: 15px;
   background-color: transparent;
   border: none;
 }
 
 .submit {
+  width: 20%;
   display: block;
   float: right;
   padding: 15px;
