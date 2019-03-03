@@ -162,12 +162,11 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .half-right-content {
   margin-left: 15%;
-  width: 100%;
+  width: 85%;
   text-align: center;
 }
 
@@ -283,6 +282,7 @@ main {
     margin-left: 0;
     margin-top: 15%;
     padding-bottom: 15px;
+    width: 100%;
   }
 }
 
