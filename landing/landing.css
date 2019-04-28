@@ -84,7 +84,9 @@ main {
 }
 
 .get-started-form {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow: auto;
   position: relative;
   border-radius: 5px;
@@ -95,19 +97,18 @@ main {
 
 .username-input {
   display: block;
-  float: left;
   height: inherit;
   height: 100%;
-  width: 80%;
   padding: 15px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background-color: transparent;
   border: none;
 }
 
 .submit {
-  width: 20%;
   display: block;
-  float: right;
   padding: 15px;
   margin: 0;
   border: none;
