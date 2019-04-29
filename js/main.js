@@ -14,8 +14,8 @@ var viewProfile = document.getElementById("view-profile-link");
 var username = location.hash.substr(1, location.hash.length);
 
 var error = function(title, desc) {
-  document.getElementById("error-title").textContent = title;
-  document.getElementById("error-info").textContent = desc;
+  document.getElementById("error-title").innerHTML = title;
+  document.getElementById("error-info").innerHTML = desc;
   document.getElementById("main").style.display = "none";
   document.getElementById("error").style.display = "block";
   endLoading();
@@ -41,10 +41,6 @@ var req = new XMLHttpRequest();
 req.open("GET", 'https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/users/' + username);
 req.send();
 req.onreadystatechange = function() {
-
-  if (req.status == 404) {
-    error("User not found", "Make sure there isn't a typo.");
-  }
 
   if (req.readyState === 4 && req.status === 200) {
     // Shows the country and avatar
@@ -72,5 +68,14 @@ req.onreadystatechange = function() {
     } 
     // Hides the loader
     endLoading();
-  }};
+  }
+
+  else if (req.status == 404) {
+    error("User not found", "Make sure there isn't a typo.");
+  }
+
+  else {
+    error("An unknown error occured.", "This embedded Scratch profile can not be shown.<br><a href='https://locness3.github.io/scratch-profile-embed/landing' class='btn' target='_blank' rel='noopener'>About Scratch Profile Embed</a>");
+  }
+};
   
