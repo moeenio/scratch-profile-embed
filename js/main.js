@@ -74,7 +74,7 @@ req.onreadystatechange = function() {
     error("User not found", "Make sure there isn't a typo.");
   }
 
-  else if (req.status !== 404) {
+  else if (req.status !== 404 && req.status !== 200) {
     error("An unknown error occured.", "This embedded Scratch profile can not be shown.<br><a href='https://locness3.github.io/scratch-profile-embed/landing' class='btn' target='_blank' rel='noopener'>About Scratch Profile Embed</a>");
   }
 };
