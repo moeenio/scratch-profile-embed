@@ -59,7 +59,7 @@ req.onreadystatechange = function() {
       bio.innerHTML = "<em>Not specified</em>";
     }
     // Shows the "What I'm working on" if it's not empty
-    if(parsedresp.profile.status !== "") {
+    if (parsedresp.profile.status !== "") {
       statusPar.textContent = parsedresp.profile.status;
     }
     // Otherwise, it shows "Not specified"
@@ -70,11 +70,11 @@ req.onreadystatechange = function() {
     endLoading();
   }
 
-  else if (req.status == 404) {
+  else if (req.status === 404) {
     error("User not found", "Make sure there isn't a typo.");
   }
 
-  else {
+  else if (req.status !== 404 && req.status !== 200) {
     error("An unknown error occured.", "This embedded Scratch profile can not be shown.<br><a href='https://locness3.github.io/scratch-profile-embed/landing' class='btn' target='_blank' rel='noopener'>About Scratch Profile Embed</a>");
   }
 };
