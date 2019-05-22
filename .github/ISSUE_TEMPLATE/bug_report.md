@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report a bug on the website
+about: Report a bug in Scratch Profile Embed.
 title: "[Bug]"
 labels: bug
 assignees: locness3
