@@ -1,5 +1,6 @@
 # scratch-profile-embed
-### Embed your Scratch profile on your website, easily.
+*Embed your Scratch profile on your website, easily.*
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/abb3a6c2-3790-42bb-b2c8-59a25630d8de/deploy-status)](https://app.netlify.com/sites/scratch-profile-embed/deploys)
 ![Under MIT license](https://img.shields.io/github/license/locness3/scratch-profile-embed.svg)
 [![Chat on Scratch](https://img.shields.io/badge/chat-on%20scratch-orange.svg)](https://scratch.mit.edu/studios/5240865/)
