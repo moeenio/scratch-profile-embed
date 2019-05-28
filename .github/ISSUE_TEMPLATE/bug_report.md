@@ -7,6 +7,8 @@ assignees: locness3
 
 ---
 
+<! PLEASE READ -- If embeds don't work at all, check your browser console. If you see a CORS-related error, that is most likely a problem with cors-anywhere. Find its status first, and if everything is fine on their side create an issue. Thanks :) -->
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
