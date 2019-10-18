@@ -17,7 +17,7 @@
                 <input id="username-input" class="username-input" name="username" placeholder="Enter your username" type="text" size="20" maxlength="20" autocomplete="off">
                 <button class="submit" onCLick="startGetCode();">Get started</button>
             </div>
-            <a class="block-link" href="changelog">View changelog</a>
+            <a class="block-link changelog-link" href="#">View changelog</a>
             <cite>This has really helped me promote my profile on my blog. It is quick and easy and the presentation is amazing! — <a href="https://scratch.mit.edu/users/Joshuay2" target="_blank" rel="noopener">Joshuay2</a></cite>
             <div class="bottom">
               <a class="block-link" href="https://github.com/locness3/scratch-profile-embed" target="_blank" rel="noopener">
@@ -71,7 +71,7 @@
     <script src="https://cdn.emojicom.io/embed/widget.js" async></script>
     <!-- End emojicom.io widget -->
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="00d0b1f0-0f6a-4dc2-ae37-91f2febc6e1d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();$crisp.push(["do", "chat:hide"]);</script>
-    <!-- Start Open Web Analytics Tracker -->
+    <!-- Open Web Analytics Tracker -->
     <script type="text/javascript">
         //<![CDATA[
         var owa_baseUrl = 'http://locness.byethost6.com/owa/';
@@ -88,7 +88,25 @@
         }());
         //]]>
     </script>
-    <!-- End Open Web Analytics Tracker -->
+    <!-- Headway - Changelog -->
+    <script>
+      var HW_config = {
+        selector: ".changelog-link", // CSS selector where to inject the badge
+        account:  "7wrqWx",
+        trigger: ".changelog-link"
+      }
+    </script>
+    <script async src="https://cdn.headwayapp.co/widget.js"></script>
+    <style>
+      .changelog-link:after {
+        display: none;
+      }
+
+      #HW_badge_cont {
+        display: inline-block !important;
+        vertical-align: middle;
+      }
+    </style>
     <script src="landing.js"></script>
   </body>
 </html>
