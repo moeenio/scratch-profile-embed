@@ -24,6 +24,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://telepathicsquidproductions.github.io"><img src="https://avatars2.githubusercontent.com/u/46281840?v=4" width="100px;" alt="CluckCluckChicken"/><br /><sub><b>CluckCluckChicken</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=CluckCluckChicken" title="Code">💻</a></td>
+    <td align="center"><a href="https://mtiger.xyz"><img src="https://avatars0.githubusercontent.com/u/16640496?v=4" width="100px;" alt="Ted Jameson"/><br /><sub><b>Ted Jameson</b></sub></a><br /><a href="#review-MasterOfTheTiger" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://andreto.tk"><img src="https://avatars0.githubusercontent.com/u/28541538?v=4" width="100px;" alt="Andreas Törnkvist"/><br /><sub><b>Andreas Törnkvist</b></sub></a><br /><a href="#ideas-Andreto" title="Ideas, Planning, & Feedback">🤔</a> <a href="#review-Andreto" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="http://locness3.github.io"><img src="https://avatars1.githubusercontent.com/u/37651007?v=4" width="100px;" alt="Locness"/><br /><sub><b>Locness</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=locness3" title="Code">💻</a> <a href="#design-locness3" title="Design">🎨</a></td>
   </tr>
 </table>
 
