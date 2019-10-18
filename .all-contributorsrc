@@ -1,0 +1,23 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "CluckCluckChicken",
+      "name": "CluckCluckChicken",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/46281840?v=4",
+      "profile": "http://telepathicsquidproductions.github.io",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "scratch-profile-embed",
+  "projectOwner": "locness3",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
