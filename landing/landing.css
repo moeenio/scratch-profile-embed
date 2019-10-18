@@ -135,6 +135,8 @@ main {
   display: block;
   margin: 15px 0;
   text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .block-link::after {
@@ -148,6 +150,14 @@ main {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   opacity: 0.5;
+}
+
+.changelog-link:after {
+  display: none;
+}
+
+.changelog-link:hover, .changelog-link:focus {
+  opacity: 0.85;
 }
 
 .block-link:hover::after, .block-link:focus::after {
