@@ -12,6 +12,9 @@ var bio = document.getElementById("bio");
 var statusPar = document.getElementById("status");
 var viewProfile = document.getElementById("view-profile-link");
 var username = location.hash.substr(1, location.hash.length);
+var featuredImg = document.getElementById("featured-img");
+var featuredA = document.getElementById("featured-project-a");
+var featuredTitle = document.getElementById("featured-project-title");
 
 var error = function(title, desc) {
   document.getElementById("error-title").innerHTML = title;
@@ -36,7 +39,7 @@ usernameLabel.textContent = username;
 document.title = username;
 viewProfile.href = "https://scratch.mit.edu/users/" + username;
 
-// Do the request 
+// Do the request
 var req = new XMLHttpRequest();
 req.open("GET", 'https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/users/' + username);
 req.send();
@@ -52,7 +55,6 @@ req.onreadystatechange = function() {
     // Shows the "About me" if it's not empty
     if(parsedresp.profile.bio !== "") {
       bio.textContent = parsedresp.profile.bio;
-      
     }
     // Otherwise, it shows "Not specified"
     else {
@@ -65,7 +67,22 @@ req.onreadystatechange = function() {
     // Otherwise, it shows "Not specified"
     else {
       statusPar.innerHTML = "<em>Not specified</em>";
-    } 
+    }
+
+    var reqFP = new XMLHttpRequest();
+    reqFP.open("GET", 'https://cors-anywhere.herokuapp.com/scratch.mit.edu/site-api/users/all/' + username);
+    reqFP.send();
+    reqFP.onreadystatechange = function() {
+      if (reqFP.readyState === 4 && reqFP.status === 200) {
+        var parsedrespFP = JSON.parse(reqFP.responseText);
+        console.log(parsedrespFP.featured_project);
+        featuredImg.src = "https://cdn2.scratch.mit.edu/get_image/project/" + parsedrespFP.featured_project + "_282x210.png";
+        featuredImg.alt = parsedrespFP.featured_project_data.title + "(featured project)'s image"
+        featuredA.href = "https://scratch.mit.edu/projects/" + parsedrespFP.featured_project;
+        featuredTitle.innerHTML = parsedrespFP.featured_project_data.title;
+      }
+    }
+
     // Hides the loader
     endLoading();
   }
@@ -78,4 +95,18 @@ req.onreadystatechange = function() {
     error("An unknown error occured.", "This embedded Scratch profile can not be shown.<br><a href='https://locness3.github.io/scratch-profile-embed/landing' class='btn' target='_blank' rel='noopener'>About Scratch Profile Embed</a>");
   }
 };
-  
+
+// second request for featured project
+
+//var reqFP = new XMLHttpRequest();
+//reqFP.open("GET", 'https://cors-anywhere.herokuapp.com/scratch.mit.edu/site-api/users/all/' + username);
+//reqFP.send();
+//reqFP.onreadystatechange = function() {
+//  if (reqFP.readyState === 4 && reqFP.status === 200) {
+//    var parsedrespFP = JSON.parse(reqFP.responseText);
+//    console.log(parsedrespFP.featured_project);
+//    featuredImg.src = "https://cdn2.scratch.mit.edu/get_image/project/" + parsedrespFP.featured_project + "_282x210.png";
+//    featuredA.href = "https://scratch.mit.edu/projects/" + parsedrespFP.featured_project;
+//    featuredTitle.innerHTML = parsedrespFP.featured_project_data.title;
+//  }
+//}

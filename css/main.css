@@ -77,10 +77,27 @@ body {
   text-align: center;
   margin: 5px;
 }
+h5 {
+  margin-bottom: 0px;
+  margin-top: 12px;
+}
 #bio-container,#status-container {
   display: inline-block;
   height: auto;
   vertical-align: top;
+}
+#featured-project-a {
+  color: inherit;
+  text-decoration: none;
+}
+#featured-project-title {
+  text-align: center;
+  margin: 0;
+  color: inherit;
+  font-weight: bold;
+}
+#featured-project-heading {
+  text-align: center;
 }
 #view-profile {
   position: relative;
