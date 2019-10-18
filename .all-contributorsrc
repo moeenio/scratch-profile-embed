@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "locness3",
+      "name": "Locness",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/37651007?v=4",
+      "profile": "http://locness3.github.io",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "scratch-profile-embed",
+  "projectOwner": "locness3",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
