@@ -1,5 +1,5 @@
 # scratch-profile-embed
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 *Embed your Scratch profile on your website, easily.*
 
@@ -25,6 +25,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://locness3.github.io"><img src="https://avatars1.githubusercontent.com/u/37651007?v=4" width="100px;" alt="Locness"/><br /><sub><b>Locness</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=locness3" title="Code">💻</a> <a href="#design-locness3" title="Design">🎨</a></td>
+    <td align="center"><a href="https://andreto.tk"><img src="https://avatars0.githubusercontent.com/u/28541538?v=4" width="100px;" alt="Andreas Törnkvist"/><br /><sub><b>Andreas Törnkvist</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=Andreto" title="Code">💻</a> <a href="#ideas-Andreto" title="Ideas, Planning, & Feedback">🤔</a> <a href="#review-Andreto" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
