@@ -66,6 +66,7 @@
         </div>
       </div>
     </main>
+    <div id="modal-overlay" class="modal-overlay" tabindex="-1"></div>
     <!-- Start emojicom.io widget -->
     <script>window.emojicom_widget = { campaign: "oBdOLuhbPYRfIXA3dQbD" };</script>
     <script src="https://cdn.emojicom.io/embed/widget.js" async></script>
@@ -93,7 +94,17 @@
       var HW_config = {
         selector: ".changelog-link", // CSS selector where to inject the badge
         account:  "7wrqWx",
-        trigger: ".changelog-link"
+        trigger: ".changelog-link",
+        callbacks: {
+          onShowWidget: function() {
+            if (getViewportWidth() <= 490) {
+              showModalOverlay();
+            }
+          },
+          onHideWidget: function() {
+            hideModalOverlay();
+          }
+        }
       }
     </script>
     <script async src="https://cdn.headwayapp.co/widget.js"></script>
