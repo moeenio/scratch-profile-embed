@@ -160,6 +160,15 @@ main {
   opacity: 0.85;
 }
 
+#HW_badge_cont {
+  display: inline-block !important;
+  vertical-align: middle;
+}
+
+#HW_frame_cont {
+  left: 50px !important;
+}
+
 .block-link:hover::after, .block-link:focus::after {
   -webkit-transform: translateX(3px);
   transform: translateX(3px);
@@ -322,5 +331,15 @@ main {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  #HW_frame_cont {
+    position: fixed !important;
+    left: 0px !important;
+    top: initial !important;
+    bottom: 0 !important;
+    width: 100% !important;
   }
 }
