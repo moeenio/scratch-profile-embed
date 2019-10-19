@@ -34,6 +34,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "MasterOfTheTiger",
+      "name": "Ted Jameson",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/16640496?v=4",
+      "profile": "https://mtiger.xyz",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
