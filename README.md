@@ -1,8 +1,8 @@
 # scratch-profile-embed
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+
 *Embed your Scratch profile on your website, easily.*
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg)](#contributors)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/abb3a6c2-3790-42bb-b2c8-59a25630d8de/deploy-status)](https://app.netlify.com/sites/scratch-profile-embed/deploys)
 [![Under MIT license](https://img.shields.io/github/license/locness3/scratch-profile-embed.svg)](https://github.com/locness3/scratch-profile-embed/blob/master/LICENSE)
 [![Chat on Scratch](https://img.shields.io/badge/chat-on%20scratch-orange.svg)](https://scratch.mit.edu/studios/5240865/)
@@ -26,6 +26,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://locness3.github.io"><img src="https://avatars1.githubusercontent.com/u/37651007?v=4" width="100px;" alt="Locness"/><br /><sub><b>Locness</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=locness3" title="Code">💻</a> <a href="#design-locness3" title="Design">🎨</a></td>
     <td align="center"><a href="https://andreto.tk"><img src="https://avatars0.githubusercontent.com/u/28541538?v=4" width="100px;" alt="Andreas Törnkvist"/><br /><sub><b>Andreas Törnkvist</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=Andreto" title="Code">💻</a> <a href="#ideas-Andreto" title="Ideas, Planning, & Feedback">🤔</a> <a href="#review-Andreto" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="http://telepathicsquidproductions.github.io"><img src="https://avatars2.githubusercontent.com/u/46281840?v=4" width="100px;" alt="CluckCluckChicken"/><br /><sub><b>CluckCluckChicken</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=CluckCluckChicken" title="Code">💻</a></td>
   </tr>
 </table>
 
