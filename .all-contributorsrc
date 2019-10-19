@@ -43,6 +43,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "githubfan",
+      "name": "Coding Master",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/47252616?v=4",
+      "profile": "https://githubfan.github.io",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
