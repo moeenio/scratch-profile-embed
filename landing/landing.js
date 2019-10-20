@@ -1,3 +1,8 @@
+Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+// Based off https://stackoverflow.com/a/8876069/10074924
+var getViewportWidth = function() { return Math.max(document.documentElement.clientWidth, window.innerWidth || 0); }
+
+var modalOverlay = document.getElementById("modal-overlay");
 var embedCode;
 var username;
 var frameWidth, frameHeight;
@@ -7,6 +12,20 @@ var initialEndForm = document.getElementById("end-form");
 var previewFrame = document.getElementById("preview-frame");
 var getCodeEl = document.getElementById("getcode");
 var embedCodeEl = document.getElementById("embed-code");
+
+var showModalOverlay = function() {
+  modalOverlay.className = "modal-overlay show";
+}
+
+var hideModalOverlay = function() {
+  modalOverlay.className = "modal-overlay";
+}
+
+var showChangelogModalOverlay = function() {
+  if (viewportWidth <= 490) {
+    showModalOverlay();
+  }
+}
 
 var startGetCode = function() {
   username = document.getElementById("username-input").value;
