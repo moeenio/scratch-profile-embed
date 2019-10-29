@@ -29,10 +29,33 @@ cite::before {
   display: inline-block;
   height: 50px;
   width: 50px;
-  background-image: url("https://png.icons8.com/ios-glyphs/50/000000/quote-left/FFFFFF");
+  background-image: url("https://img.icons8.com/ios-glyphs/50/000000/quote-left/FFFFFF");
   position: relative;
   opacity: 0.3;
 }
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  pointer-events: none;
+}
+
+.modal-overlay.show {
+  pointer-events: all;
+  opacity: 1;
+}
+
+
 
 main {
   display: -webkit-box;
@@ -70,6 +93,8 @@ main {
 .half-left-content {
   margin: 0 15px;
 }
+
+
 
 .version-badge {
   display: inline-block;
@@ -135,6 +160,8 @@ main {
   display: block;
   margin: 15px 0;
   text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .block-link::after {
@@ -150,11 +177,30 @@ main {
   opacity: 0.5;
 }
 
+.changelog-link:after {
+  display: none;
+}
+
+.changelog-link:hover, .changelog-link:focus {
+  opacity: 0.85;
+}
+
+#HW_badge_cont {
+  display: inline-block !important;
+  vertical-align: middle;
+}
+
+#HW_frame_cont {
+  left: 50px !important;
+}
+
 .block-link:hover::after, .block-link:focus::after {
   -webkit-transform: translateX(3px);
   transform: translateX(3px);
   opacity: 1;
 }
+
+
 
 .half.right {
   float: right;
@@ -264,6 +310,8 @@ main {
   white-space: pre-wrap;
 }
 
+
+
 @media only screen and (max-width: 1045px) {
   main {
     -webkit-box-orient: vertical;
@@ -312,5 +360,19 @@ main {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  #HW_frame_cont {
+    position: fixed !important;
+    left: 0px !important;
+    top: initial !important;
+    bottom: 0 !important;
+    width: 100% !important;
+  }
+
+  #HW_frame {
+    border-radius: 8px 8px 0 0 !important;
   }
 }

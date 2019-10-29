@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex">
-    <title>Loading...</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/loaders.min.css">
-  </head>
-  <body>
-      <div id="no-js" class="error">
-        <div class="error-content">
-          <h1 class="error-title">No JavaScript</h1>
-          <p class="error-info">
-           To view this embedded Scratch profile, JavaScript must be turned on.
-           <br>
-           <a href="why-js.html" class="btn">Why?</a><br><a href="https://locness3.github.io/scratch-profile-embed/landing" class="btn" target="_blank" rel="noopener">About Scratch Profile Embed</a>
-          </p>
-        </div>
-      </div>
-	  <div id="loading">
-        <div class="loader-container">
-          <div class="loader">
-            <div class="ball-pulse-sync">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Loading...</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/loaders.min.css">
+</head>
+
+<body>
+  <div id="no-js" class="error">
+    <div class="error-content">
+      <h1 class="error-title">No JavaScript</h1>
+      <p class="error-info">
+        To view this embedded Scratch profile, JavaScript must be turned on.
+        <br>
+        <a href="why-js.html" class="btn">Why?</a><br><a href="https://locness3.github.io/scratch-profile-embed/landing" class="btn" target="_blank" rel="noopener">About Scratch Profile Embed</a>
+      </p>
     </div>
-    <div id="error" class="error hide">
-      <div class="error-content">
-        <h1 id="error-title"></h1>
-        <p id="error-info"></p>
-      </div>
-    </div>
-    <div id="main">
-      <div id="identity">
-        <img id="avatar" src="images/loader.svg" alt="Loading" class="loading">
-        <div id="name-and-country">
-          <p id="username">Loading</p>
-          <p id="country">Loading</p>
-        </div>
-        <div id="view-profile">
-          <div id="view-profile-link-container"><a id="view-profile-link" class="btn" href="#" target="_blank">View on Scratch</a></div>
-        </div>
-      </div>
-      <div id="bio-and-status">
-        <div id="bio-container">
-          <h5 id="bio-paragraph-heading">About me</h5>
-          <p id="bio">Loading</p>
-        </div>
-        <div id="status-container">
-          <h5 id="status-paragraph-heading">What I'm working on</h5>
-          <p id="status">Loading</p>
+  </div>
+  <div id="loading">
+    <div class="loader-container">
+      <div class="loader">
+        <div class="ball-pulse-sync">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
-	  <script>
-      document.getElementById("no-js").style.display = "none";
-    </script>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+  <div id="error" class="error hide">
+    <div class="error-content">
+      <h1 id="error-title"></h1>
+      <p id="error-info"></p>
+    </div>
+  </div>
+  <div id="main">
+    <div id="identity">
+      <img id="avatar" src="images/loader.svg" alt="Loading" class="loading">
+      <div id="name-and-country">
+        <p id="username">Loading</p>
+        <p id="country">Loading</p>
+      </div>
+      <div id="view-profile">
+        <div id="view-profile-link-container"><a id="view-profile-link" class="btn" href="#" target="_blank">View on Scratch</a></div>
+      </div>
+    </div>
+    <div id="bio-and-status">
+      <div id="featured-project">
+        <h5 id="featured-project-heading">Featured Project</h5>
+        <a id="featured-project-a" href="https://scratch.mit.edu" target="_blank" rel="noopener">
+          <img id="featured-img" src="" align="middle" alt="Featured project's image (loading)" width="240" height="180">
+          <p id="featured-project-title"></p>
+        </a>
+      </div>
+      <div id="bio-container">
+        <h5 id="bio-paragraph-heading">About me</h5>
+        <p id="bio">Loading</p>
+      </div>
+      <div id="status-container">
+        <h5 id="status-paragraph-heading">What I'm working on</h5>
+        <p id="status">Loading</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("no-js").style.display = "none";
+
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
