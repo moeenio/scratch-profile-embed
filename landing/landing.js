@@ -11,7 +11,8 @@ var initialRightHeading = document.getElementById("initial-right-heading");
 var initialEndForm = document.getElementById("end-form");
 var previewFrame = document.getElementById("preview-frame");
 var getCodeEl = document.getElementById("getcode");
-var embedCodeEl = document.getElementById("embed-code");
+var codeSelect = document.getElementById("code-select");
+
 
 var showModalOverlay = function() {
   modalOverlay.className = "modal-overlay show";
@@ -43,7 +44,7 @@ var endGetCode = function() {
   frameWidth = document.getElementById("width-input").value;
   frameHeight = document.getElementById("height-input").value;
   embedCode = `<iframe src="https://locness3.github.io/scratch-profile-embed/#${username}" width="${frameWidth}" height="${frameHeight}"></iframe>`;
-  embedCodeEl.textContent = embedCode;
+  codeSelect.value = embedCode;
   initialRightContent.style.display = "none";
   getCodeEl.style.display = "block";
 }
