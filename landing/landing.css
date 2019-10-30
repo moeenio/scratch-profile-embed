@@ -303,6 +303,7 @@ main {
   width: 95%;
   margin: 0 auto;
   padding: 15px;
+  padding-bottom: 30px;
 }
 
 .code-block code {
@@ -310,7 +311,16 @@ main {
   white-space: pre-wrap;
 }
 
-
+#copy-button {
+  background-color: #ffffff00;
+  color: #000000aa;
+  float: right;
+  border: none;
+  font-size: 16px;
+}
+#copy-button:hover {
+  color: #000000;
+}
 
 @media only screen and (max-width: 1045px) {
   main {
