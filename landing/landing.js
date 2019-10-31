@@ -13,16 +13,6 @@ var previewFrame = document.getElementById("preview-frame");
 var getCodeEl = document.getElementById("getcode");
 var embedCodeEl = document.getElementById("embed-code");
 
-var copyCodeToClipboard = function() {
-  var tempInputEl = document.createElement("input");
-  tempInputEl.value = document.getElementById("embed-code").textContent;
-  tempInputEl.id = "temp-input-el";
-  document.body.appendChild(tempInputEl);
-  document.getElementById("temp-input-el").select();
-  document.execCommand("copy");
-  document.body.removeChild(document.getElementById("temp-input-el"));
-}
-
 var showModalOverlay = function() {
   modalOverlay.className = "modal-overlay show";
 }
@@ -61,6 +51,16 @@ var endGetCode = function() {
 var backToStart = function() {
   getCodeEl.style.display = "none";
   initialRightContent.style.display = "block";
+}
+
+var copyCodeToClipboard = function() {
+  var tempInputEl = document.createElement("input");
+  tempInputEl.value = document.getElementById("embed-code").textContent;
+  tempInputEl.id = "temp-input-el";
+  document.body.appendChild(tempInputEl);
+  document.getElementById("temp-input-el").select();
+  document.execCommand("copy");
+  document.body.removeChild(document.getElementById("temp-input-el"));
 }
 
 document.getElementById("username-input").addEventListener("keyup", function(event) {
