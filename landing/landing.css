@@ -303,6 +303,7 @@ main {
   width: 95%;
   margin: 0 auto;
   padding: 15px;
+  position: relative;
 }
 
 .code-block code {
@@ -311,9 +312,11 @@ main {
 }
 
 #copy-button {
+  position: absolute;
   background-color: #ffffff00;
   color: #000000aa;
-  float: right;
+  right: 15px;
+  top: 15px;
   border: none;
   font-size: 16px;
 }
