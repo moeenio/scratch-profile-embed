@@ -313,16 +313,22 @@ main {
 
 .copy-button {
   position: absolute;
-  background-color: #ffffff00;
-  color: #222222aa;
   right: 15px;
   top: 10px;
+  background-color: #ffffff00;
+  color: #222222aa;
   border: none;
   font-size: 16px;
+  opacity: 0;
+  transition: 0.2s;
 }
 
 .copy-button:hover {
   color: #222222;
+}
+
+.code-block:hover .copy-button, .copy-button:focus {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1045px) {
