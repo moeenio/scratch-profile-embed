@@ -302,7 +302,7 @@ main {
   color: #222222;
   width: 95%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 25px 0 25px 0;
   position: relative;
 }
 
@@ -311,17 +311,18 @@ main {
   white-space: pre-wrap;
 }
 
-#copy-button {
+.copy-button {
   position: absolute;
   background-color: #ffffff00;
-  color: #000000aa;
+  color: #222222aa;
   right: 15px;
-  top: 15px;
+  top: 10px;
   border: none;
   font-size: 16px;
 }
-#copy-button:hover {
-  color: #000000;
+
+.copy-button:hover {
+  color: #222222;
 }
 
 @media only screen and (max-width: 1045px) {
