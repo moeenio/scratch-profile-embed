@@ -48,10 +48,23 @@ var endGetCode = function() {
   getCodeEl.style.display = "block";
 }
 
+var copyCodeToClipboard = function(trigger) {
+  var tempInputEl = document.createElement("input");
+  tempInputEl.value = document.getElementById("embed-code").textContent;
+  tempInputEl.id = "temp-input-el";
+  document.body.appendChild(tempInputEl);
+  document.getElementById("temp-input-el").select();
+  document.execCommand("copy");
+  document.body.removeChild(document.getElementById("temp-input-el"));
+  trigger.textContent = "Copied!";
+  window.setTimeout(function() {trigger.textContent = "Copy"}, 2000);
+}
+
 var backToStart = function() {
   getCodeEl.style.display = "none";
   initialRightContent.style.display = "block";
 }
+
 
 document.getElementById("username-input").addEventListener("keyup", function(event) {
   if (event.key === "Enter") {

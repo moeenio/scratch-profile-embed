@@ -302,7 +302,8 @@ main {
   color: #222222;
   width: 95%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 25px 0 25px 0;
+  position: relative;
 }
 
 .code-block code {
@@ -310,7 +311,25 @@ main {
   white-space: pre-wrap;
 }
 
+.copy-button {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background-color: #ffffff00;
+  color: #222222aa;
+  border: none;
+  font-size: 16px;
+  opacity: 0;
+  transition: 0.2s;
+}
 
+.copy-button:hover {
+  color: #222222;
+}
+
+.code-block:hover .copy-button, .copy-button:focus {
+  opacity: 1;
+}
 
 @media only screen and (max-width: 1045px) {
   main {
