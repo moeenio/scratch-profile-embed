@@ -222,11 +222,6 @@ main {
   margin: 0 auto;
 }
 
-.perview-frame-div iframe {
-  border: none;
-  border-radius: 5px;
-}
-
 .end-form {
   display: none;
 }
