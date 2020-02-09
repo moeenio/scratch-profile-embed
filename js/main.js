@@ -1,6 +1,18 @@
-// Shows the presentation page if there's no hash
-if (location.hash === "#" || location.hash === "") {
+var searchParams = new URLSearchParams(location.search);
+
+// Shows the landing page if there's no hash or no "u" query parameter
+if ((location.hash === "#" || location.hash === "") && searchParams.get("u") === null){
   location.href = "landing";
+}
+
+
+// If there's a hash AND no "u" query parameter
+if (location.hash !== "" && location.hash !== "#" && searchParams.get("u") === null) {
+  // Set the query parameters to have the username as "u"
+  location.search = "?u=" + location.hash.substr(1, location.hash.length);
+  // Remove the hash completely (no #)
+  // From https://stackoverflow.com/a/4508751
+  history.pushState("", document.title, location.pathname + location.search);
 }
 
 // The variables
@@ -11,7 +23,7 @@ var country = document.getElementById("country");
 var bio = document.getElementById("bio");
 var statusPar = document.getElementById("status");
 var viewProfile = document.getElementById("view-profile-link");
-var username = location.hash.substr(1, location.hash.length);
+var username = searchParams.get("u");
 var featuredImg = document.getElementById("featured-img");
 var featuredA = document.getElementById("featured-project-a");
 var featuredTitle = document.getElementById("featured-project-title");
