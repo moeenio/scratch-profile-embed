@@ -29,14 +29,22 @@ var showChangelogModalOverlay = function() {
 
 var startGetCode = function() {
   username = document.getElementById("username-input").value;
-  frameWidth = document.getElementById("width-input").value;
-  frameHeight = document.getElementById("height-input").value;
-  initialEndForm.style.display = "block";
-  previewFrame.className = "preview-frame";
-  embedCode = `<iframe src="https://locness3.github.io/scratch-profile-embed/#${username}" width="${frameWidth}" height="${frameHeight}" style="border: 1px solid grey; border-radius: 5px;"></iframe>`;
-  window.scrollTo(0, document.body.scrollHeight);
-  initialRightHeading.textContent = "Preview";
-  previewFrame.innerHTML = embedCode;
+  if (username == ""){
+    document.getElementById('username-alert').style.opacity = 1;
+    document.getElementById('username-alert').style.background = "#00000000";
+  }else{
+    document.getElementById('username-alert').style.opacity = 0;
+    document.getElementById('username-alert').style.background = "#5901e6";
+    frameWidth = document.getElementById("width-input").value;
+    frameHeight = document.getElementById("height-input").value;
+    initialEndForm.style.display = "block";
+    previewFrame.className = "preview-frame";
+    embedCode = `<iframe src="https://locness3.github.io/scratch-profile-embed/#${username}" width="${frameWidth}" height="${frameHeight}" style="border: 1px solid grey; border-radius: 5px;"></iframe>`;
+    window.scrollTo(0, document.body.scrollHeight);
+    initialRightHeading.textContent = "Preview";
+    previewFrame.innerHTML = embedCode;
+  }
+
 };
 
 var endGetCode = function() {
