@@ -58,5 +58,6 @@
   "projectName": "scratch-profile-embed",
   "projectOwner": "locness3",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
