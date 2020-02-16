@@ -29,17 +29,20 @@ Uses [cors-anywhere](https://github.com/Rob--W/cors-anywhere) and the [Scratch R
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://locness3.github.io"><img src="https://avatars1.githubusercontent.com/u/37651007?v=4" width="100px;" alt="Locness"/><br /><sub><b>Locness</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=locness3" title="Code">💻</a> <a href="#design-locness3" title="Design">🎨</a></td>
-    <td align="center"><a href="https://andreto.tk"><img src="https://avatars0.githubusercontent.com/u/28541538?v=4" width="100px;" alt="Andreas Törnkvist"/><br /><sub><b>Andreas Törnkvist</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=Andreto" title="Code">💻</a> <a href="#ideas-Andreto" title="Ideas, Planning, & Feedback">🤔</a> <a href="#review-Andreto" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="http://telepathicsquidproductions.github.io"><img src="https://avatars2.githubusercontent.com/u/46281840?v=4" width="100px;" alt="CluckCluckChicken"/><br /><sub><b>CluckCluckChicken</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=CluckCluckChicken" title="Code">💻</a></td>
-    <td align="center"><a href="https://mtiger.xyz"><img src="https://avatars0.githubusercontent.com/u/16640496?v=4" width="100px;" alt="Ted Jameson"/><br /><sub><b>Ted Jameson</b></sub></a><br /><a href="#review-MasterOfTheTiger" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://githubfan.github.io"><img src="https://avatars0.githubusercontent.com/u/47252616?v=4" width="100px;" alt="Coding Master"/><br /><sub><b>Coding Master</b></sub></a><br /><a href="#review-githubfan" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="http://locness3.github.io"><img src="https://avatars1.githubusercontent.com/u/37651007?v=4" width="100px;" alt=""/><br /><sub><b>Locness</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=locness3" title="Code">💻</a> <a href="#design-locness3" title="Design">🎨</a></td>
+    <td align="center"><a href="https://andreto.tk"><img src="https://avatars0.githubusercontent.com/u/28541538?v=4" width="100px;" alt=""/><br /><sub><b>Andreas Törnkvist</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=Andreto" title="Code">💻</a> <a href="#ideas-Andreto" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/locness3/scratch-profile-embed/pulls?q=is%3Apr+reviewed-by%3AAndreto" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="http://telepathicsquidproductions.github.io"><img src="https://avatars2.githubusercontent.com/u/46281840?v=4" width="100px;" alt=""/><br /><sub><b>CluckCluckChicken</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/commits?author=CluckCluckChicken" title="Code">💻</a></td>
+    <td align="center"><a href="https://mtiger.xyz"><img src="https://avatars0.githubusercontent.com/u/16640496?v=4" width="100px;" alt=""/><br /><sub><b>Ted Jameson</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/pulls?q=is%3Apr+reviewed-by%3AMasterOfTheTiger" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://githubfan.github.io"><img src="https://avatars0.githubusercontent.com/u/47252616?v=4" width="100px;" alt=""/><br /><sub><b>Coding Master</b></sub></a><br /><a href="https://github.com/locness3/scratch-profile-embed/pulls?q=is%3Apr+reviewed-by%3Agithubfan" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
