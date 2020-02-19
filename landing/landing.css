@@ -119,17 +119,24 @@ main {
   margin: 15px 0;
 }
 
-.username-alert{
-  background: #5901e6;
-  border-radius: 5px;
+.username-alert {
   position: absolute;
-  font-size: 12px;
-  top: -30px;
+  top: -100%;
   right: 0px;
-  padding: 4px;
+  padding: 8px 15px;
+  font-size: 12px;
+  background-color: #5901e6;
+  border-radius: 5px;
+  transition: opacity 0.2s, transform 0.2s;
+  transform: translateY(15px);
   opacity: 0;
-  transition: opacity 0.4s;
-  transition: background 0.8s;
+  pointer-events: none;
+}
+
+.username-alert.active {
+  transform: translateY(0px);
+  opacity: 1;
+  pointer-events: all;
 }
 
 .username-input {

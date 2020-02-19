@@ -29,12 +29,17 @@ var showChangelogModalOverlay = function() {
 
 var startGetCode = function() {
   username = document.getElementById("username-input").value;
-  if (username == ""){
-    document.getElementById('username-alert').style.opacity = 1;
-    document.getElementById('username-alert').style.background = "#00000000";
-  }else{
-    document.getElementById('username-alert').style.opacity = 0;
-    document.getElementById('username-alert').style.background = "#5901e6";
+  if (username === "") {
+    /*document.getElementById('username-alert').style.opacity = 1;
+    document.getElementById('username-alert').style.background = "#00000000";*/
+    document.getElementById("username-alert").classList.add("active");
+    document.getElementById("username-alert").setAttribute("aria-hidden", "true");
+  }
+  else {
+    /*document.getElementById('username-alert').style.opacity = 0;
+    document.getElementById('username-alert').style.background = "#5901e6";*/
+    document.getElementById("username-alert").classList.remove("active");
+    document.getElementById("username-alert").setAttribute("aria-hidden", "false");
     frameWidth = document.getElementById("width-input").value;
     frameHeight = document.getElementById("height-input").value;
     initialEndForm.style.display = "block";
