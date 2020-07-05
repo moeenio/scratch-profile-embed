@@ -77,3 +77,22 @@ document.getElementById("end-form").addEventListener("keyup", function(event) {
     startGetCode();
   }
 })
+
+// Deprecation modal
+showModalOverlay();
+document.getElementById("deprecationModal").style.display = "block";
+
+var deprecationArticleJson;
+fetch("https://locness.hopto.org/wp/wp-json/wp/v2/posts/964")
+.then(response => {
+  return response.json();
+})
+.then(responseJson => {
+  document.getElementById("deprecationModalHeader").textContent = responseJson.title.rendered;
+  document.getElementById("deprecationModalContent").innerHTML += responseJson.content.rendered;
+})
+
+document.getElementById("deprecationModalClose").addEventListener("click", function() {
+  document.getElementById("deprecationModal").style.display = "none";
+  hideModalOverlay();
+})
